@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html lang="no" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Våre Tjenester | Søppeltaxi & Dødsbo</title>
+    <meta name="description" content="Oversikt over alle våre tjenester: Dødsbo, Søppeltaxi, Bygningsavfall, Hageavfall og Flytterengjøring.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#3B82F6',
+                            green: '#10B981',
+                            accent: '#F59E0B',
+                            bg: '#0F172A',
+                            card: '#1E293B',
+                            textMain: '#F8FAFC',
+                            textMuted: '#94A3B8'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-bg text-brand-textMuted min-h-screen flex flex-col relative overflow-x-hidden">
+
+    <!-- Header -->
+    <header class="bg-brand-bg/80 backdrop-blur-md border-b border-slate-800/80 py-4 fixed top-0 w-full z-50 transition-all duration-300" id="main-header">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="bg-brand-blue text-white p-2.5 rounded-xl shadow-[0_0_15px_rgba(59,130,246,0.5)]">
+                    <i class="fa-solid fa-truck-fast text-xl"></i>
+                </div>
+                <span class="font-extrabold text-2xl tracking-tight text-brand-textMain">Søppel<span class="text-brand-green">taxi</span></span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 font-semibold text-sm">
+                <a href="index.html" class="text-brand-textMuted hover:text-brand-blue transition">Hjem</a>
+                <a href="services.html" class="text-brand-textMain hover:text-brand-blue transition">Tjenester</a>
+                <a href="contact.html" class="text-brand-textMuted hover:text-brand-blue transition">Kontakt Oss</a>
+                <a href="contact.html" class="bg-brand-blue hover:bg-blue-600 text-white px-5 py-2.5 rounded-full font-bold shadow-[0_0_15px_rgba(59,130,246,0.4)] transition">Få Tilbud</a>
+            </nav>
+
+            <button id="mobile-menu-btn" class="md:hidden text-brand-textMain text-2xl p-2">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-card border-b border-slate-700 px-6 py-6 space-y-4">
+            <a href="index.html" class="block text-brand-textMuted">Hjem</a>
+            <a href="services.html" class="block font-bold text-brand-textMain">Tjenester</a>
+            <a href="contact.html" class="block text-brand-textMuted">Kontakt Oss</a>
+            <a href="contact.html" class="block text-center bg-brand-blue text-white py-3 rounded-lg font-bold">Få Gratis Tilbud</a>
+        </div>
+    </header>
+
+    <!-- Page Title Banner -->
+    <section class="pt-36 pb-12 bg-brand-card/40 border-b border-slate-800 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-4xl sm:text-5xl font-black text-brand-textMain mb-4">Våre Tjenester</h1>
+            <p class="text-brand-textMuted max-w-2xl mx-auto">Vi tilbyr skreddersydde løsninger for alt innen avfall, rydding og flytting.</p>
+        </div>
+    </section>
+
+    <!-- Detailed Services List with Visual Cards -->
+    <main class="py-20 relative z-10 flex-grow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+
+            <!-- Detail 1: Dødsbo -->
+            <div class="bg-brand-card border border-brand-blue/40 rounded-3xl overflow-hidden shadow-2xl grid md:grid-cols-12 items-center">
+                <div class="md:col-span-5 h-64 md:h-full relative">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Dødsbo" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-r from-transparent to-brand-card/90 hidden md:block"></div>
+                </div>
+                <div class="md:col-span-7 p-8 lg:p-12 space-y-4">
+                    <span class="bg-brand-blue/20 text-brand-blue font-bold text-xs px-3 py-1 rounded-full uppercase">Spesialisttjeneste</span>
+                    <h2 class="text-3xl font-extrabold text-brand-textMain">Tømming av Dødsbo</h2>
+                    <p class="text-brand-textMuted leading-relaxed">Å håndtere et dødsbo kan være krevende. Vi tilbyr en komplett og verdig løsning der vi tar oss av hele prosessen fra A til Å.</p>
+                    <ul class="grid sm:grid-cols-2 gap-3 text-sm pt-2">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> Sortering og pakking</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> Transport og deponering</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> Grundig nedvask</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> Klargjøring for salg</li>
+                    </ul>
+                    <div class="pt-4">
+                        <a href="contact.html" class="inline-block bg-brand-blue hover:bg-blue-600 text-white font-bold px-6 py-3 rounded-xl transition shadow-[0_0_15px_rgba(59,130,246,0.4)]">Bestill Befaring</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detail 2: Søppeltaxi (Updated with 24/7 & Corrected Image Path) -->
+            <div class="bg-brand-card border border-slate-700/80 rounded-3xl overflow-hidden shadow-2xl grid md:grid-cols-12 items-center">
+                <div class="md:col-span-7 p-8 lg:p-12 space-y-4 order-2 md:order-1">
+                    <span class="inline-flex items-center gap-2 bg-brand-green/20 text-brand-green border border-brand-green/30 font-extrabold text-xs px-3.5 py-1.5 rounded-full uppercase">
+                        <span class="w-2 h-2 rounded-full bg-brand-green animate-pulse"></span>
+                        Døgnåpen 24/7 • Rask Henting
+                    </span>
+                    <h2 class="text-3xl font-extrabold text-brand-textMain">Søppeltaxi</h2>
+                    <p class="text-brand-textMuted leading-relaxed">
+                        Har du avfall du må bli kvitt umiddelbart? Vår søppeltaxi er tilgjengelig <span class="text-white font-bold">24/7</span> og henter avfallet <span class="text-white font-bold">direkte</span> fra din adresse uten at du løfter en finger.
+                    </p>
+                    <ul class="grid sm:grid-cols-2 gap-3 text-sm pt-2">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> Møbler og hvitevarer</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> EE-avfall / Elektronikk</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> Papp og emballasje</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> Kildesortering</li>
+                    </ul>
+                    <div class="pt-4">
+                        <a href="contact.html" class="inline-block bg-brand-green hover:bg-emerald-600 text-slate-950 font-bold px-6 py-3 rounded-xl transition shadow-[0_0_15px_rgba(16,185,129,0.4)]">Bestill Søppeltaxi</a>
+                    </div>
+                </div>
+                
+               <!-- Truck Image Container -->
+<div class="md:col-span-5 h-72 md:h-full min-h-[300px] relative order-1 md:order-2">
+    <img src="images/truck.jpeg" alt="Søppeltaxi Truck" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-l from-transparent to-brand-card/90 hidden md:block"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+
+    <!-- Branded Phone Badge Overlay -->
+    <div class="absolute bottom-4 left-4 right-4 bg-slate-900/90 backdrop-blur-md p-3 rounded-xl border border-brand-green/30 flex items-center justify-between shadow-lg">
+        <div class="flex items-center gap-2">
+            <i class="fa-solid fa-truck text-brand-green"></i>
+            <span class="font-extrabold text-white text-sm">Søppel<span class="text-brand-green">taxi</span></span>
+        </div>
+        <span class="text-xs font-bold text-brand-green bg-brand-green/10 px-2.5 py-1 rounded-lg border border-brand-green/20">
+            <i class="fa-solid fa-phone mr-1"></i> +47 471 83 236
+        </span>
+    </div>
+ </div>
+   
+  </main>
+
+  <!-- Footer Section (جاهز للنسخ في كل صفحات الموقع) -->
+<footer class="bg-[#0b1120] text-slate-400 pt-16 pb-12 border-t border-slate-800 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Top Footer Grid (4 Columns) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+            
+            <!-- Column 1: About Brand -->
+            <div class="space-y-4">
+                <a href="index.html" class="flex items-center gap-2.5 mb-2">
+                    <span class="font-black text-2xl tracking-tight text-white">Søppel<span class="text-brand-green">taxi</span></span>
+                </a>
+                <p class="text-sm leading-relaxed text-slate-400">
+                    Vi tilbyr rask og pålitelig bortkjøring av søppel, grovavfall, byggavfall, varetaxi, flytting og vasketjenester for privatpersoner og bedrifter.
+                </p>
+            </div>
+
+            <!-- Column 2: Tjenester -->
+            <div>
+                <h4 class="text-lg font-bold text-white mb-4">Tjenester</h4>
+                <ul class="space-y-2.5 text-sm">
+                    <li><a href="services.html" class="hover:text-brand-blue transition">SØPPELTAXII</a></li>
+                    <li><a href="services.html" class="hover:text-brand-blue transition">Henting av avfall</a></li>
+                    <li><a href="services.html" class="hover:text-brand-blue transition">Varetaxi</a></li>
+                    <li><a href="services.html" class="hover:text-brand-blue transition">Bedriftsflytting</a></li>
+                    <li><a href="services.html" class="hover:text-brand-blue transition">Vasketjenester</a></li>
+                    <li><a href="services.html" class="hover:text-brand-blue transition">Avfallshåndtering</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Snarveier -->
+            <div>
+                <h4 class="text-lg font-bold text-white mb-4">Snarveier</h4>
+                <ul class="space-y-2.5 text-sm">
+                    <li><a href="index.html" class="hover:text-brand-blue transition">Hjem</a></li>
+                    <li><a href="services.html" class="hover:text-brand-blue transition">Tjenester</a></li>
+                    <li><a href="contact.html" class="hover:text-brand-blue transition">Kontakt Oss</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Kontaktinfo -->
+            <div>
+                <h4 class="text-lg font-bold text-white mb-4">Kontaktinfo</h4>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-phone text-brand-green"></i>
+                        <a href="tel:+4747183236" class="hover:text-white font-semibold transition text-white">471 83 236</a>
+                    </li>
+                    <li>
+                        <span>Vipps: </span><span class="font-semibold text-white">471 83 236</span>
+                    </li>
+                    <li>
+                        <span>Organisasjonsnummer: </span><span class="font-semibold text-white">936336272</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Horizontal Divider -->
+        <div class="border-t border-slate-800/80 pt-8 mt-4 text-center">
+            <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
+                &copy; 2026 SØPPELTAXII I Webdesign og utvikling av 
+                <a href="#" class="underline font-semibold text-slate-400 hover:text-brand-blue transition">Dugnad Solutions</a>
+            </p>
+        </div>
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
